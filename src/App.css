@@ -1,0 +1,26 @@
+.app {
+  height: 100vh;
+  background: rgb(9, 66, 85);
+  display: flex;
+  justify-content: center;
+}
+
+.app h3 {
+  font-size: 30px;
+}
+
+.app p {
+  font-size: 20px;
+}
+
+.tweet {
+  height: 300px;
+  width: 300px;
+  background: white;
+  margin: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
