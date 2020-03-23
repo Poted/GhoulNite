@@ -44,14 +44,15 @@ function App() {
           navLinks={ navLinks }
           logo={ logo }
         />
-        <Router>
+        <Router className="router">
           <Contact path="/contact" />
-          <Home path="/home" />
+          <Home path="/" />
           <Portfolio path="/portfolio" />
           <Blog path='/blog'/>
           <About path='/about'/>
         </Router> 
       </div>
+	
     );
   }
 

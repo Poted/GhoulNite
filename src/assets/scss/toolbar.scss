@@ -1,25 +1,40 @@
 nav.responsive-toolbar {
         background: #333;
         background-image: url('/fantasy-background-city.jpg');
-        
         height: 60px;
         width: 100%;
         position: fixed;
-        box-shadow: 20px 0px 20px #ccc;
-    
+        box-shadow: 0px 0px 20px #ccc;
+        //position: fixed;
+        position: relative;
  }
 
  ul {
     display: flex;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-inline-start: 0;
+    padding-inline-start: 0;
     height: 100%;
     align-items: center;
+    box-shadow: 2px 2px 2px #ccc;
+    
+    figure {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 2px;
+        margin-inline-start: 0;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    
     
     li {
         list-style-type: none;
         padding: 10px 20px;
+
+        .active {
+            background: #999;
+        }
     }
 
     a {
@@ -35,4 +50,15 @@ nav.responsive-toolbar {
         font-size: 18px;
 
     }
+ }
+
+ //Ta klasa jest dla beki, weź ją usuń później
+ .router { 
+     font-size: 300px;
+ }
+
+ //ta też
+ .NoHelloKurwa {
+     font-size: 200px;
+     color: firebrick;
  }
