@@ -4,8 +4,8 @@ class Home extends Component {
     render () {
         return (
             <div
-                className="NoHelloKurwa"
-            >Hello</div>
+                className="home"
+            >Heldsdslo</div>
         )
     }
 }

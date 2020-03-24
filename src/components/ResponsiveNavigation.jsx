@@ -5,6 +5,7 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
      const [ hoverIndex, setHoverIndex ] = useState(-1)
      const [ navOpen, setNavOpen ] = useState(false) 
     //console.log(navLinks, hoverBackground, linkColor, logo)
+    
 
 
     return (
@@ -17,14 +18,13 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
                 
                 <figure onClick={ () => setNavOpen(!navOpen) }>
                     <img src={logo} height="40px" width="40px" alt="logo-nav-togger"/>
-
                 </figure>
 
                 {navLinks.map((link, index) =>
                     <li 
                         onMouseEnter={ () => setHoverIndex(index)}
                         onMouseLeave={ () => setHoverIndex(- 1)}
-                        style={{ background: hoverIndex === index ? ( hoverBackground || '#999') : '' }}
+                        style={{ background: hoverIndex === index ? ( hoverBackground || '#333987') : '' }}
                     >
                         <Link
                             to={link.path}
