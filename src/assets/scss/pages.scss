@@ -4,6 +4,7 @@
 .router {
     width: 100%;
     height: 100%;
+   // padding-top: 10px;
      //background-image: url('/fantasy-background-city.jpg');
     //background-attachment: fixed;
     // height: 50.45vw;
@@ -13,12 +14,19 @@
 
 }
 
-
 .home {
     font-size: 400px;
     color: crimson;
     width: 100%;
-    height: 50.45vw;
+    height: 100vh;
+    margin-top: 10px;
+    
+    .container {
+        background-color: #333;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
 }
 
 .contact {
@@ -26,8 +34,7 @@
     font-size: 400px;
     padding-top: 100px;
     width: 100%;
-    //height: 100vh;
-    
+    height: 100vh;
 }
 
 .about {
@@ -37,11 +44,11 @@
 
 .blog {
     width: 100%;
-    //height: 50.45vw;
+    height: 100vh;
 }
 
 .portfolio {
     width: 100%;
-    height: 50.45vw;
+    height: 100vh;
     
 }
