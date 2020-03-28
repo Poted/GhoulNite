@@ -24,7 +24,7 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
                     <li 
                         onMouseEnter={ () => setHoverIndex(index)}
                         onMouseLeave={ () => setHoverIndex(- 1)}
-                        style={{ background: hoverIndex === index ? ( hoverBackground || '#333987') : '' }}
+                        style={{ background: hoverIndex === index ? ( hoverBackground || '#666') : '' }}
                     >
                         <Link
                             to={link.path}

@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Blog extends Component {
     render () {
         return (
-            <div>Blog</div>
+            <div style={{fontSize: "400px"}}>
+            About<br/>About<br/>About<br/>About<br/>About<br/>About<br/>About<br/>
+        </div>
         )
     }
 }

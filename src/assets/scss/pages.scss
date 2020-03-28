@@ -1,0 +1,47 @@
+// Don't set pages height because it's gonna make white spaces 
+// on background which is set to .App class
+
+.router {
+    width: 100%;
+    height: 100%;
+     //background-image: url('/fantasy-background-city.jpg');
+    //background-attachment: fixed;
+    // height: 50.45vw;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //position: static;
+
+}
+
+
+.home {
+    font-size: 400px;
+    color: crimson;
+    width: 100%;
+    height: 50.45vw;
+}
+
+.contact {
+    color: crimson;
+    font-size: 400px;
+    padding-top: 100px;
+    width: 100%;
+    //height: 100vh;
+    
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+.blog {
+    width: 100%;
+    //height: 50.45vw;
+}
+
+.portfolio {
+    width: 100%;
+    height: 50.45vw;
+    
+}
