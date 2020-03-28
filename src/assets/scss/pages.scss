@@ -3,14 +3,15 @@
 
 .router {
     width: 100%;
-    height: 100%;
+   // height: 100vh;
    // padding-top: 10px;
-     //background-image: url('/fantasy-background-city.jpg');
-    //background-attachment: fixed;
+     background-image: url('/fantasy-background-city.jpg');
+    background-attachment: fixed;
     // height: 50.45vw;
     //background-repeat: no-repeat;
     //background-size: cover;
     //position: static;
+    padding-top: 90px;
 
 }
 
@@ -18,8 +19,8 @@
     font-size: 400px;
     color: crimson;
     width: 100%;
-    height: 100vh;
-    margin-top: 10px;
+    height: 92.6vh;
+    //padding-top: 10px;
     
     .container {
         background-color: #333;
@@ -33,22 +34,19 @@
     color: crimson;
     font-size: 400px;
     padding-top: 100px;
-    width: 100%;
-    height: 100vh;
+    
+
 }
 
 .about {
-    width: 100%;
-    height: 100vh;
+    //height: 100vh;
 }
 
 .blog {
-    width: 100%;
-    height: 100vh;
+
 }
 
 .portfolio {
-    width: 100%;
-    height: 100vh;
+
     
 }
