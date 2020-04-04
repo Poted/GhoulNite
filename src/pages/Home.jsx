@@ -9,7 +9,7 @@ class Home extends Component {
                     <div className="loginWindow">
                         
                         <div className="loginHeader">
-                            <h3> Login to GhoulNite </h3>
+                            <h3> Login to <img src={require("../assets/GhoulNite.png")}/> </h3>
                             
                             <div className="headerButtons">
                                 <span>  </span> 
