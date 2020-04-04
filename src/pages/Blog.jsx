@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Blog extends Component {
     render () {
         return (
-            <div style={{fontSize: "400px"}}>
+            <div className="blog">
             About<br/>About<br/>About<br/>About<br/>About<br/>About<br/>About<br/>
         </div>
         )

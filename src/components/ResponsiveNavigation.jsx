@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from '@reach/router';
 
+
 function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColor, logo }) {
      const [ hoverIndex, setHoverIndex ] = useState(-1)
      const [ navOpen, setNavOpen ] = useState(false) 
@@ -12,12 +13,15 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
         <nav 
             className="responsive-toolbar" 
             style={{ background }}>
+            
+
+            
             <ul 
                 style={{ background }}
                 className={ navOpen ? 'active' : ''}> 
                 
                 <figure onClick={ () => setNavOpen(!navOpen) }>
-                    <img src={logo} height="40px" width="40px" alt="logo-nav-togger"/>
+                    <img src={logo} alt="logo-nav-togger"/>
                 </figure>
 
                 {navLinks.map((link, index) =>
@@ -31,11 +35,16 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
                             style={{ color: linkColor }}
                         >
                             { link.text }
-                            <i className={link.icon} />
+                <i className={link.icon} /> 
                         </Link>
                     </li>
                 )}
             </ul>
+
+
+            <div className="userAvatar">
+
+            </div>
         </nav>
     )
 }

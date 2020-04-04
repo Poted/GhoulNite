@@ -34,24 +34,24 @@ function App() {
 		{
 			text: 'Portfolio',
 			path: '/portfolio',
-			icon: 'ion-ios-briefcase'
+			icon: 'ion-ios-person'
 		}
 	]
 
     return(
 		
       <div className="App">
-        <ResponsiveNavigation
-          navLinks={ navLinks }
-          logo={ logo }
-        />
-        <Router className="router">
-          <Contact path="/contact" />
-          <Home path="/" />
-          <Portfolio path="/portfolio" />
-          <Blog path='/blog'/>
-          <About path='/about'/>
-        </Router> 
+			<ResponsiveNavigation
+			navLinks={ navLinks }
+			logo={ logo }
+			/>
+			<Router className="router">
+			<Contact path="/contact" />
+			<Home path="/" />
+			<Portfolio path="/portfolio" />
+			<Blog path='/blog'/>
+			<About path='/about'/>
+			</Router> 
       </div>
 	
     );

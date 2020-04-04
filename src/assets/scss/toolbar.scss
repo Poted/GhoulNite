@@ -1,131 +1,122 @@
 nav.responsive-toolbar {
-        //background: #333;
-        //background-color: rgba(255,255,255,0.7);
-        background-image: url('/headerBackground.png');
-        background-attachment: fixed;
-        object-fit: cover;
-        height: 60px;
-       // height: 6vh;
-        width: 100%;
-        box-shadow: 0px 0px 20px #ccc;
-        position: fixed;
- }
+    background-color: rgba(90, 90, 90, 0.666);
+    
+    height: 100vh;
 
- ul {
-    //background: #333;
-    display: flex;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-    height: 100%;
-    align-items: center;
-    box-shadow: 2px 2px 2px #ccc;
+    position: fixed;
+    z-index: 1;             /* Stay on top */
+    top: 0;                 /* Stay at the top */
+    left: 0;
+    margin-left: 0;
+    overflow-x: hidden;     /* Disable horizontal scroll */
+    padding-top: 50px;      /* Place content 60px from the top */
+
+    box-shadow: 2px 0px 20px 2px rgba(255, 255, 255, 0.789);
     
-    
+}
+
     figure {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 33vw;
-        margin-inline-end: 0;
+        margin: 0;
         cursor: pointer;
-        //margin-left: 20px;
+     
+        img {
+            height: 60px;
+            width: 60px;
+        }
     } 
-    
-    
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 14vw;
+        font-size: 16px;
+        margin-left: 0;
+        padding-inline-start: 0px;  //fuck chrome
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 16vw;
+            font-size: 15px;
+            margin-left: 0;
+            transition: width 20vw;
+
+        
+            
+            a {
+                font-size: 25px;
+
+                i {
+                }
+            }
+        }
+
     li {
         list-style-type: none;
         padding: 10px 20px;
-
-        //
-        .active {
-            background: #d35400;
-        }
+        
     }
 
     a {
-        color: white;
         text-decoration: none;
+        color: white;
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
+
     }
-
-   /* a:before {
-        content: '';
-        position: absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        border-radius:50%;
-        background: #d35400;
-        transition: .5s;
-        transform: scale(.9);
-        z-index: -1;
-      }
-
-      a:hover:before {
-        transform: scale(1.2);
-        box-shadow: 0 0 15px #d35400;
-        filter: blur(3px);
-      }
-      a:hover {
-        color: #ffa502;
-        box-shadow: 0 0 15px #d35400;
-        text-shadow: 0 0 15px #d35400;
-        height: 100%;
-    }*/
 
     i {
-        margin-right: 7px;
-        font-size: 18px;
+        //background-color: springgreen;
+        padding-right: 6px;
+
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 759px) {
+///TUTEJROBOTA
+
+ nav.responsive-toolbar {
+     position: fixed;
+    ul {
+        //background-image: url('/fantasy-background-city.jpg');
+        background: #333;
+        height: 100%;
+        width: 300px;
+        left: -240px;
+        position: fixed;
+        top: 60px;
+        flex-direction: column;
+        transition: 300ms ease all;
+
+        &.active {
+            left: 0px;
+        }
+
+        figure {
+            position: fixed;
+            left: -15px;
+            top: 10px;
+        }
+
+        li {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        a {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 16px;
+        }
 
     }
  }
-
-
-
-
-
- @media screen and (max-width: 759px) {
-    ///TUTEJROBOTA
-
-     nav.responsive-toolbar {
-         position: fixed;
-        ul {
-            //background-image: url('/fantasy-background-city.jpg');
-            background: #333;
-            height: 100%;
-            width: 300px;
-            left: -240px;
-            position: fixed;
-            top: 60px;
-            flex-direction: column;
-            transition: 300ms ease all;
-
-            &.active {
-                left: 0px;
-            }
-
-            figure {
-                position: fixed;
-                left: -15px;
-                top: 10px;
-            }
-
-            li {
-                width: 100%;
-                padding-left: 0;
-                padding-right: 0;
-            }
-            
-            a {
-                flex-direction: row;
-                justify-content: space-between;
-                margin-left: 20px;
-                margin-right: 16px;
-            }
-
-        }
-     }
- }
+}
