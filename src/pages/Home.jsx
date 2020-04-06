@@ -33,10 +33,11 @@ class Home extends Component {
                                     <input type="password" className="passwordInput" placeholder="Your password.."/>
                                 </div>
 
-                                <div className="rememberCheckbox">
+                                
+                               {/* <div className="rememberCheckbox">
                                     <input type="checkbox"/>
                                     Remember Me
-                                </div>
+                                    </div> */}
                                 
                                 <input type="submit" value="Login" className="loginBtn"/>
                            
@@ -45,10 +46,10 @@ class Home extends Component {
                         
                         <div className="loginFooter">
                             <div className="signUp">
-
+                                Don't have an account? <a href="#">Create one!</a>
                             </div>
-                            <div className="forgetPassword">
-                                
+                            <div className="forgotPassword">
+                                <a href="#">Forgot your password?</a>
                             </div>
                         </div>
                     </div>
