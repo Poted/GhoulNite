@@ -75,6 +75,7 @@
 
                 .password {
                     margin-bottom: 0px;
+                    margin-top: 10px;
 
                     .passwordImg {
                         width: 3vw;
@@ -107,11 +108,12 @@
                 }
 
                 .loginBtn {
-                    margin-top: 30px;
+                    margin-top: 40px;
                     margin-bottom: 10px;
-                    font-size: 20px;
+                    width: 90px;
+                    height: 38px;
+                    font-size: 25px;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    width: 80px;
                     border-radius: 5px;
                     border-color: rgba(214, 210, 210, 0.585);
                     background-color: rgba(50, 49, 49, 0.918);
@@ -127,6 +129,7 @@
                 border-radius: 4px;
                 bottom: 0;
                 position: absolute;
+                overflow: hidden;
                 
                 
                 .signUp, .forgotPassword {

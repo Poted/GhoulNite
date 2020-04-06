@@ -1,5 +1,6 @@
 import React, { useState } from 'react'; 
 import { Router } from '@reach/router';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
@@ -8,6 +9,7 @@ import Home from './pages/Home.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import ResponsiveNavigation from './components/ResponsiveNavigation';
 import logo from './logo.svg';
+import MainPage from './pages/mainPage';
 
 function App() {
   const navLinks = [
@@ -38,22 +40,31 @@ function App() {
 		}
 	]
 
+
     return(
-		
-      <div className="App">
-			<ResponsiveNavigation
-			navLinks={ navLinks }
-			logo={ logo }
-			/>
-			<Router className="router">
-			<Contact path="/contact" />
-			<Home path="/" />
-			<Portfolio path="/portfolio" />
-			<Blog path='/blog'/>
-			<About path='/about'/>
-			</Router> 
-      </div>
-	
+
+		<BrowserRouter>
+			<Switch>
+				
+				<Route path="/" exact component={ MainPage } />
+
+				<div className="App">
+						<ResponsiveNavigation
+						navLinks={ navLinks }
+						logo={ logo } />
+
+						<Router className="router">
+						<Contact path="/contact" />
+						<Home path="/home" />
+						<Portfolio path="/portfolio" />
+						<Blog path='/blog'/>
+						<About path='/about'/>
+						</Router> 
+				</div>
+				
+			</Switch>
+		</BrowserRouter>
+
     );
   }
 
