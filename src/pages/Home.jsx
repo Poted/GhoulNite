@@ -4,7 +4,7 @@ import '../assets/scss/pages.scss';
 class Home extends Component {
     render () {
         return (
-            <div className="home">
+{/*          <div className="home">
                 <div className="container">
                     <div className="loginWindow">
                         
@@ -34,10 +34,10 @@ class Home extends Component {
                                 </div>
 
                                 
-                               {/* <div className="rememberCheckbox">
+                               //////// <div className="rememberCheckbox">
                                     <input type="checkbox"/>
                                     Remember Me
-                                    </div> */}
+                                    </div> //////////////////////////
                                 
                                 <input type="submit" value="Login" className="loginBtn"/>
                            
@@ -54,9 +54,12 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-	    	</div>       
-        )
+            </div>        
+        */}
+
+
+            ) 
+        }
     }
-}
 
 export default Home; 

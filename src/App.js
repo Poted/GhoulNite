@@ -46,7 +46,7 @@ function App() {
 		<BrowserRouter>
 			<Switch>
 				
-				<Route path="/" exact component={ MainPage } />
+				<Route exact path="/" exact component={ MainPage } />
 
 				<div className="App">
 						<ResponsiveNavigation
