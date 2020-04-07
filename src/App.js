@@ -8,8 +8,9 @@ import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import ResponsiveNavigation from './components/ResponsiveNavigation';
-import logo from './logo.svg';
+import logo from './assets/rune.png';
 import MainPage from './pages/mainPage';
+import UserProfile from './pages/userProfile';
 
 function App() {
   const navLinks = [
@@ -37,7 +38,8 @@ function App() {
 			text: 'Portfolio',
 			path: '/portfolio',
 			icon: 'ion-ios-person'
-		}
+		},
+
 	]
 
 
@@ -54,11 +56,12 @@ function App() {
 						logo={ logo } />
 
 						<Router className="router">
-						<Contact path="/contact" />
-						<Home path="/home" />
-						<Portfolio path="/portfolio" />
-						<Blog path='/blog'/>
-						<About path='/about'/>
+							<Contact path="/contact" />
+							<Home path="/home" />
+							<Portfolio path="/portfolio" />
+							<Blog path='/blog'/>
+							<About path='/about'/>
+							<UserProfile path='/user-profile'/>
 						</Router> 
 				</div>
 				

@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from '@reach/router';
+import UserProfile from '../pages/userProfile';
 
 
 function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColor, logo }) {
      const [ hoverIndex, setHoverIndex ] = useState(-1)
      const [ navOpen, setNavOpen ] = useState(false) 
-    //console.log(navLinks, hoverBackground, linkColor, logo)
+    console.log()
     
 
 
     return (
-        <nav 
-            className="responsive-toolbar" 
-            style={{ background }}>
-            
-
-            
+        <nav className="responsive-toolbar">
             <ul 
-                style={{ background }}
+                style={ background }
                 className={ navOpen ? 'active' : ''}> 
                 
                 <figure onClick={ () => setNavOpen(!navOpen) }>
@@ -32,19 +28,25 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
                     >
                         <Link
                             to={link.path}
-                            style={{ color: linkColor }}
-                        >
+                            style={{ color: linkColor }}>
+
                             { link.text }
-                <i className={link.icon} /> 
+                            <i className={link.icon} /> 
+                        
                         </Link>
+
                     </li>
                 )}
+
+                <div className="userProfileBtn">
+                    <Link to="/user-profile">
+                        <img src={require("../assets/jarek.png")}/>
+                        <a>Your Profile</a>
+                    </Link>
+
+                </div>
             </ul>
 
-
-            <div className="userAvatar">
-
-            </div>
         </nav>
     )
 }
