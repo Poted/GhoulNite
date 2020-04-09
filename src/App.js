@@ -16,7 +16,7 @@ function App() {
   const navLinks = [
 		{
 			text: 'Home',
-			path: '/',
+			path: '/home',
 			icon: 'ion-ios-home'
 		},
 		{
@@ -36,7 +36,7 @@ function App() {
 		},
 		{
 			text: 'Portfolio',
-			path: '/portfolio',
+			path: '',
 			icon: 'ion-ios-person'
 		},
 

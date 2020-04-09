@@ -1,65 +1,57 @@
 import React, { Component } from 'react';
 import '../assets/scss/pages.scss';
+import UserStore from '../components/userStore';
+import MainPage from './mainPage';
+import SubmitButton from '../components/SumbitButton';
 
 class Home extends Component {
-    render () {
-        return (
-{/*          <div className="home">
-                <div className="container">
-                    <div className="loginWindow">
-                        
-                        <div className="loginHeader">
-                            <h3> Login to <img src={require("../assets/GhoulNite.png")}/> </h3>
-                            
-                            <div className="headerButtons">
-                                <span>  </span> 
-                                <span>  </span> 
-                                <span>  </span> 
-                            </div>
-                        </div>
 
+    async doLogout() {
 
-                        <div className="loginBody">
-                            <form>
-                                <img className="mainImg" src={require("../assets/scroll.png")}/>
+        console.log('hi');
 
-                                <div className="login">
-                                    <img className="loginImg" src={require("../assets/coin.png")}/>
-                                    <input type="text" className="userInput" placeholder="Login"/>
-                                </div>
+        try {
 
-                                <div className="password">
-                                    <img className="passwordImg" src={require("../assets/key.png")}/>
-                                    <input type="password" className="passwordInput" placeholder="Your password.."/>
-                                </div>
+            let res = await fetch('/logout', {
+                method: 'post',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-type': 'application/json'
+                }
+            });
 
-                                
-                               //////// <div className="rememberCheckbox">
-                                    <input type="checkbox"/>
-                                    Remember Me
-                                    </div> //////////////////////////
-                                
-                                <input type="submit" value="Login" className="loginBtn"/>
-                           
-                            </form>
-                        </div>
-                        
-                        <div className="loginFooter">
-                            <div className="signUp">
-                                Don't have an account? <a href="#">Create one!</a>
-                            </div>
-                            <div className="forgotPassword">
-                                <a href="#">Forgot your password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        */}
+            let result = await res.json(); 
 
+            if ( result && result.success ) {
+                UserStore.isLoggedIn = false;
+                UserStore.username = '';
+            }
 
-            ) 
+        }
+
+        catch(e) {
+            console.log(e);
         }
     }
+
+    render () {
+        return (
+            <div>
+
+                <div style={{color: 'white', fontSize: '25px' }}> Welcome { UserStore.username } </div>     
+                
+                <input type="button" onClick={ () => this.doLogout() } value="Log Out!"/>
+
+               {/* <SubmitButton
+                    text={'log out'}
+                    disabled={false}
+                    onClick={ () => MainPage.doLogout() }
+                    />
+            */}
+            </div>
+
+        );
+    }
+}
 
 export default Home; 
