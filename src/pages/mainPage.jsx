@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Component } from 'react';
 import UserStore from '../components/userStore';
 import { observer } from 'mobx-react';
+import LoginForm from '../components/LoginForm';
 
 
 
@@ -16,7 +17,7 @@ class MainPage extends Component {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json',
-                    'Content-type': 'application/json'
+                    'Content-Type': 'application/json'
                 }
             });
 
@@ -73,6 +74,11 @@ class MainPage extends Component {
 
     render() {
 
+        //return (<LoginForm></LoginForm>)
+
+       // if(true == false)
+        //{
+
         return (
             <div className="App">
                 <div className="home">
@@ -83,8 +89,8 @@ class MainPage extends Component {
                                 <h3> Welcome to <img src={require("../assets/GhoulNite.png")}/> </h3>
                             </div>
 
-
-                            <div className="loginBody">
+                            
+                        {/*    <div className="loginBody">
                                 <form>
                                     <img className="mainImg" src={require("../assets/scroll.png")}/>
 
@@ -105,7 +111,7 @@ class MainPage extends Component {
                                     </div>
                                     
                                     <input type="submit" value="Login" className="loginBtn"/>
-                                */}
+                                * /}
                                     
                                     <Link to={"/home"}>
                                         <input type="submit" value="Login" className="loginBtn"/>
@@ -113,7 +119,9 @@ class MainPage extends Component {
                                     <div style={{ visibility: UserStore.loading ? 'visible' : 'hidden', color: 'white', fontSize: '25px' }}>Your profile is loading..</div>
 
                                 </form>
-                            </div>
+                            </div> */}
+
+                            <LoginForm/>
                             
 
                             <div className="loginFooter">
@@ -135,5 +143,6 @@ class MainPage extends Component {
         );
     }
 }
+//}//deletehere.
 
 export default observer(MainPage);

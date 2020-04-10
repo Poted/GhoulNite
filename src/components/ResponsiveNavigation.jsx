@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from '@reach/router';
-import UserProfile from '../pages/userProfile';
+import Home from '../pages/Home';
 
 
 function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColor, logo }) {
      const [ hoverIndex, setHoverIndex ] = useState(-1)
      const [ navOpen, setNavOpen ] = useState(false) 
     console.log()
-    
+
+
+
 
 
     return (
@@ -43,8 +45,10 @@ function ResponsiveNavigation ({ navLinks, background, hoverBackground, linkColo
                         <img src={require("../assets/jarek.png")}/>
                         <a>Your Profile</a>
                     </Link>
-
                 </div>
+
+                <Home/>
+
             </ul>
 
         </nav>

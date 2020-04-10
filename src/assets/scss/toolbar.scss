@@ -74,6 +74,23 @@ nav.responsive-toolbar {
 
             }
 
+            .logOutBtn {
+                margin: 0;
+                position: relative;
+                img {
+                    padding-right: 2vw;
+                    position: absolute;
+                    margin-left: 1vw;
+                    height: 8vh;
+                    
+                }
+                
+                a {
+                    margin-left: 4vw;
+                    position: relative;
+                }
+            }
+
             &.active {
                 display: flex;
                 flex-direction: column;
@@ -110,6 +127,24 @@ nav.responsive-toolbar {
                     }
     
                 }
+
+                .logOutBtn {
+                    margin: 0;
+                    position: relative;
+                    img {
+                        padding-right: 2vw;
+                        position: absolute;
+                        margin-left: -6vw;
+                        height: 8vh;
+                        
+                    }
+                    
+                    a {
+                        margin-left: 4vw;
+                        position: relative;
+                    }
+                }
+
             }
 
         }

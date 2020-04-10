@@ -4,7 +4,7 @@ import UserStore from '../components/userStore';
 import MainPage from './mainPage';
 import SubmitButton from '../components/SumbitButton';
 
-class Home extends Component {
+export class Home extends Component {
 
     async doLogout() {
 
@@ -33,21 +33,20 @@ class Home extends Component {
             console.log(e);
         }
     }
+    /*<div style={{color: 'white', fontSize: '25px' }}> Welcome { UserStore.username } </div>     
+    
+    <input type="button" onClick={ () => this.doLogout() } value="Log Out!"/>
+    */
 
     render () {
         return (
             <div>
-
-                <div style={{color: 'white', fontSize: '25px' }}> Welcome { UserStore.username } </div>     
-                
-                <input type="button" onClick={ () => this.doLogout() } value="Log Out!"/>
-
-               {/* <SubmitButton
+               
+                <SubmitButton
                     text={'log out'}
                     disabled={false}
-                    onClick={ () => MainPage.doLogout() }
-                    />
-            */}
+                    onClick={ () => this.doLogout() }
+                />
             </div>
 
         );

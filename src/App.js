@@ -1,16 +1,16 @@
-import React, { useState } from 'react'; 
-import { Router } from '@reach/router';
+import React, { useState } 	from 'react'; 
+import { Router } 			from '@reach/router';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
-import About from './pages/About.jsx';
-import Blog from './pages/Blog.jsx';
-import Contact from './pages/Contact.jsx';
-import Home from './pages/Home.jsx';
-import Portfolio from './pages/Portfolio.jsx';
+import About 				from './pages/About.jsx';
+import Blog 				from './pages/Blog.jsx';
+import Contact 				from './pages/Contact.jsx';
+import Home 				from './pages/Home.jsx';
+import Portfolio 			from './pages/Portfolio.jsx';
 import ResponsiveNavigation from './components/ResponsiveNavigation';
-import logo from './assets/rune.png';
-import MainPage from './pages/mainPage';
-import UserProfile from './pages/userProfile';
+import logo					from './assets/rune.png';
+import MainPage 			from './pages/mainPage';
+import UserProfile 			from './pages/userProfile';
 
 function App() {
   const navLinks = [
