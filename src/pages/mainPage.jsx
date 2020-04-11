@@ -73,9 +73,6 @@ class MainPage extends Component {
 
 
     render() {
-
-        //return (<LoginForm></LoginForm>)
-
        // if(true == false)
         //{
 

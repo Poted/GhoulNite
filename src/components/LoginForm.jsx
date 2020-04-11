@@ -3,6 +3,7 @@ import UserStore from '../components/userStore';
 import { values } from 'mobx';
 import { Link } from 'react-router-dom';
 import InputField from './InputField'
+import SubmitButton from './SumbitButton';
 
 
 class LoginForm extends Component {
@@ -43,11 +44,11 @@ class LoginForm extends Component {
         if (!this.state.username) {
             return;
         }
-        if(!this.state.password) {
+        if (!this.state.password) {
             return;
         }
 
-        this.state({
+        this.setState({
             buttonDisabled: true //This will propably blow up application.
         })
 
@@ -97,7 +98,7 @@ class LoginForm extends Component {
                     <img className="loginImg" src={require("../assets/coin.png")}/>
                     <InputField 
                         type="text"  
-                        placeholder="Login.."
+                        placeholder="Username.."
                         value={ this.state.username ? this.state.username : '' } 
                         onChange={ (val) => this.setInputValue('username', val) }
                     />
@@ -105,7 +106,12 @@ class LoginForm extends Component {
 
                 <div className="password">
                     <img className="passwordImg" src={require("../assets/key.png")}/>
-                    <input type="password" className="passwordInput" placeholder="Password.."/>
+                    <InputField 
+                        type="password"     
+                        placeholder="Password.."
+                        value={ this.state.password ? this.state.password : '' }
+                        onChange={ (val) => this.setInputValue('password', val) }    
+                    />
                 </div>
 
                 
@@ -116,12 +122,20 @@ class LoginForm extends Component {
                 
                 <input type="submit" value="Login" className="loginBtn"/>
             */}
-                
+                {/*
                 <Link to={"/home"}>
                     <input type="submit" value="Login" className="loginBtn"/>
                 </Link>
-                <div style={{ visibility: UserStore.loading ? 'visible' : 'hidden', color: 'white', fontSize: '25px' }}>Your profile is loading..</div>
+            */}
 
+                <SubmitButton
+                    text='Login'
+                    disabled={this.state.buttonDisabled}
+                    onClick={ () => this.doLogin() }
+                />
+                
+                <div style={{ visibility: UserStore.loading ? 'visible' : 'hidden', color: 'white', fontSize: '25px' }}>Your profile is loading..</div>
+            
             </form>
         </div>
         );
