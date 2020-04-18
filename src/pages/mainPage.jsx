@@ -74,8 +74,6 @@ class MainPage extends Component {
 
 
     render() {
-       // if(true == false)
-        //{
 
         return (
             <div className="App">
@@ -87,37 +85,7 @@ class MainPage extends Component {
                                 <h3> Welcome to <img src={require("../assets/GhoulNite.png")}/> </h3>
                             </div>
 
-                            
-                        {/*    <div className="loginBody">
-                                <form>
-                                    <img className="mainImg" src={require("../assets/scroll.png")}/>
 
-                                    <div className="login">
-                                        <img className="loginImg" src={require("../assets/coin.png")}/>
-                                        <input type="text" className="userInput" placeholder="Login.."/>
-                                    </div>
-
-                                    <div className="password">
-                                        <img className="passwordImg" src={require("../assets/key.png")}/>
-                                        <input type="password" className="passwordInput" placeholder="Password.."/>
-                                    </div>
-
-                                    
-                                {/* <div className="rememberCheckbox">
-                                        <input type="checkbox"/>
-                                        Remember Me
-                                    </div>
-                                    
-                                    <input type="submit" value="Login" className="loginBtn"/>
-                                * /}
-                                    
-                                    <Link to={"/home"}>
-                                        <input type="submit" value="Login" className="loginBtn"/>
-                                    </Link>
-                                    <div style={{ visibility: UserStore.loading ? 'visible' : 'hidden', color: 'white', fontSize: '25px' }}>Your profile is loading..</div>
-
-                                </form>
-                            </div> */}
 
                             <LoginForm/>
                             
@@ -129,7 +97,7 @@ class MainPage extends Component {
                                 </div>
                                 
                                 <div className="forgotPassword">
-                                    <a href="#">Forgot your password?</a>
+                                    <a href="#"> Forgot your password? </a> 
                                 </div>
 
                             </div>
@@ -138,21 +106,40 @@ class MainPage extends Component {
                         </div>
 
 
-                        <div style={{ color: 'white', textAlign: 'center', marginTop: '150px' }}>
+                        <div style={{ 
+                                backgroundColor: 'rgba(0, 0, 0, 0.6)',
+                                boxShadow: '0px 0px 50px 10px rgba(0, 0, 0, 0.9)',
+                                color: 'rgba(999, 999, 999, 0.88)', 
+                                textAlign: 'center', 
+                                marginTop: '25vh',
+                                paddingTop: '5vh',
+                                marginBottom: '25vh', 
+                                paddingBottom: '5vh',
+                                fontFamily: ''
+                            }}>
 
-                            <h3 style={{ fontSize: '9vh' }}> 
+                            <h3 style={{ fontSize: '6vh', fontWeight: '700', paddingBottom: '3vh'}}> 
                                 Welcome to GhoulNite!
                             </h3>
-                            <p style={{ fontSize: '4vh', width: '650px', textAlign: 'center', marginLeft: '28%', fontWeight: 'bold'}}>
+                            <p style={{ fontSize: '3vh', width: '43vw', fontWeight: 'bold', margin: 'auto' }}>
                                 Choose your character and cooperate with others 
                                 to stand for a fight to defend your city from frightening monsters!
                             </p>
 
+                            <img src={require('../assets/fangs.png')}
+                                style={{ marginTop: '4vh', height: '30vh'}}
+                            />
+
                         </div>
 
                         <iframe 
-                            style={{ marginTop: '23vh', marginBottom: '16vh', boxShadow: '0px 0px 100px 20px rgba(179, 177, 116, 0.9)', border: '3px solid white' }}
-                            width="1000" height="515" 
+                            style={{ marginBottom: '16vh', 
+                            boxShadow: '0px 0px 100px 20px rgba(179, 177, 116, 0.9)', 
+                            border: '3px outset rgba(999, 999, 220)',
+                            width: '64vw', height: '64vh' 
+                            }}
+
+                            
                             src="https://www.youtube.com/embed/pxqmY_NPByM?autoplay=0"
                             frameborder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -164,11 +151,17 @@ class MainPage extends Component {
                                         backgroundColor: 'rgba(0, 0, 0, 0.98)', 
                                         width: '100%', 
                                         height: '3.5vh', 
-                                        color: 'gold', 
+                                        color: 'rgba(999, 999, 0, 0.5)', 
                                         boxShadow: '10px 10px 100px 80px rgba(0, 0, 0, 1)',
                                         textAlign: 'center' }} >
                             <div>
-                                Hi! This is footer and this site is made by pot_e﹠Morasiu and all credits and this planet is owned by them. Ⓡ 
+                                Hi! This is footer and this site is made by 
+                                <a href="https://www.github.com/Poted" 
+                                    style={{ textDecoration: 'none', color: 'inherit'}}>
+                                        Pot_e</a>﹠
+                                            <a href="https://github.com/Morasiu/" 
+                                                style={{ textDecoration: 'none', color: 'inherit'}}>
+                                                    Morasiu</a> and all credits and this planet belong to them. Ⓡ 
                             </div>
                     </footer>
 

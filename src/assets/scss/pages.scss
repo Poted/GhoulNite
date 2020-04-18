@@ -14,17 +14,19 @@
 }
 
 .home {
+
     margin: 0;
     padding: 0;
+
     .container {
+        
         background-image: url('/fantasy-background-city.jpg');
         background-attachment: fixed;  
         background-size: 100%;
         margin: 0;
         padding: 0;
 
-            
-
+        font-family: go;
 
         .loginWindow {
 
@@ -60,6 +62,7 @@
                 font-size: 15px;
                 color: white;
                 padding-top: 0;
+
                 .mainImg {
                     height: 15vh;
                     margin: 0;
@@ -145,7 +148,6 @@
                 margin-left: 0.5%;
                 border-radius: 4px;
                 box-shadow: 0px 0px 200px 20px rgba(179, 177, 116, 0.9);
-                //This one is cool. PhotoShop in css xD
                 position: absolute;
                 bottom: 1vh;
                 display: flex;
