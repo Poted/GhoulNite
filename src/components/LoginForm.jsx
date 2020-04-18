@@ -70,13 +70,11 @@ class LoginForm extends Component {
             if (result && result.success) {
                 UserStore.isLoggedIn = true;
                 UserStore.username = result.username;
-                console.log('heldsdslo');
             }
 
             else if (result && result.success === false) {
                 this.resetForm();
                 alert(result.msg);
-                console.log('hello');
             }
             
         } 

@@ -17,8 +17,15 @@
     margin: 0;
     padding: 0;
     .container {
+        background-image: url('/fantasy-background-city.jpg');
+        background-attachment: fixed;  
+        background-size: 100%;
         margin: 0;
         padding: 0;
+
+            
+
+
         .loginWindow {
 
             background-color: rgba(0, 0, 0, 0.5);
