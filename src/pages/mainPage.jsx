@@ -111,7 +111,7 @@ class MainPage extends Component {
                                 boxShadow: '0px 0px 50px 10px rgba(0, 0, 0, 0.9)',
                                 color: 'rgba(999, 999, 999, 0.88)', 
                                 textAlign: 'center', 
-                                marginTop: '25vh',
+                                marginTop: '26vh',
                                 paddingTop: '5vh',
                                 marginBottom: '25vh', 
                                 paddingBottom: '5vh',
@@ -133,7 +133,7 @@ class MainPage extends Component {
                         </div>
 
                         <iframe 
-                            style={{ marginBottom: '16vh', 
+                            style={{ marginBottom: '24vh', 
                             boxShadow: '0px 0px 100px 20px rgba(179, 177, 116, 0.9)', 
                             border: '3px outset rgba(999, 999, 220)',
                             width: '64vw', height: '64vh' 
@@ -155,13 +155,11 @@ class MainPage extends Component {
                                         boxShadow: '10px 10px 100px 80px rgba(0, 0, 0, 1)',
                                         textAlign: 'center' }} >
                             <div>
-                                Hi! This is footer and this site is made by 
+                                Hi! This is footer and this site is made by
                                 <a href="https://www.github.com/Poted" 
-                                    style={{ textDecoration: 'none', color: 'inherit'}}>
-                                        Pot_e</a>﹠
+                                    style={{ textDecoration: 'none', color: 'inherit'}}> Pot_e </a>﹠
                                             <a href="https://github.com/Morasiu/" 
-                                                style={{ textDecoration: 'none', color: 'inherit'}}>
-                                                    Morasiu</a> and all credits and this planet belong to them. Ⓡ 
+                                                style={{ textDecoration: 'none', color: 'inherit'}}>Morasiu</a> and all credits and this planet belong to them. Ⓡ 
                             </div>
                     </footer>
 
